@@ -1,0 +1,54 @@
+#include <iostream>
+using namespace std;
+
+
+class siswa{
+        public :
+        int nisn;
+        string nama;
+        float nilai;
+    void masukkanData(){
+        cout<<"Masukan NISN = "; cin>>nisn;
+        cout<<"Masukan Nama = "; cin>>nama;
+        cout<<"Masukan Nilai = "; cin>>nilai;
+    }
+    void printData(){
+        cout<<"NISN = "<<nisn<<endl;
+        cout<<"Nama = "<<nama<<endl;
+        cout<<"Nilai = "<<nilai<<endl;
+    }
+    };
+    class guru{
+        public :
+        int nik;
+        string nama;
+        string mapel;
+    void cobaData(){
+        cout<<"Masukan NIK = "; cin>>nik;
+        cout<<"Masukan Nama = "; cin>>nama;
+        cout<<"Masukan Mapel = "; cin>>mapel;
+    }
+    void lihatData(){
+        cout<<"NIK = "<<nik<<endl;
+        cout<<"Nama = "<<nama<<endl;
+        cout<<"Mapel = "<<mapel<<endl;
+    }
+    };
+    
+    int main()
+    {
+        int angka;
+        cout<<"Masukkan angka 1 jika murid dan angka 2 jika guru = "; cin>>angka;
+        if (angka == 1){
+            siswa pertama {};
+            pertama.masukkanData();
+            pertama.printData();
+        }
+        else if (angka == 2){
+            guru kedua {};
+            kedua.cobaData();
+            kedua.lihatData();
+        }
+        
+    return 0;
+    }
